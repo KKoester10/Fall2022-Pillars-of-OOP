@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Fall2022_Pillars_of_OOP
 {
-    internal class Car : Vehicle
+    //if want to user more than one implemetation use ','
+    internal class Car : Vehicle,IAudible, IComparable<Car>, IColorable
     {
         // Properties
         public string Make { get; set; }
         public string Model { get; set; }
+        public string Color { get; set; }
 
         // Constructor
         public Car()
@@ -43,10 +45,24 @@ namespace Fall2022_Pillars_of_OOP
             // return "Make: " + Make;
         }
 
-        public static void HonkHorn()
+        public void MakeSound()
         {
             Console.WriteLine("HONK!!!");
             Console.Beep();
+        }
+
+        public int CompareTo(Car? other)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SetColor(string color)
+        {
+            Color = color;
+        }
+        public bool CompareColors(IColorable other)
+        {
+            return Color.Equals(other.Color);
         }
     }
 }

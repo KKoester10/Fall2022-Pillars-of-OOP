@@ -31,3 +31,7 @@ Encasplation
 - the idea that children can act as their parents when needed
 - many forms (an object can take on different typings depenents on parent classes and interfaces)
 - Children objects in parent cairables can only access properties and mehtods on the parent class 
+## Interfaces v. Abstract Classes
+- Most general concept for a type of data, allows us to create child classes that are more specific (Abstract Classes)
+- Abstract classes, allow you to reuse code, allows us to standarize what we write a little 
+- Abstract classes are like root words, whereas interfaces are like adjectives

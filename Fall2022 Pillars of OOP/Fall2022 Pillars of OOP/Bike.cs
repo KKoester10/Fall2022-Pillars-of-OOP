@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Fall2022_Pillars_of_OOP
 {
-    internal class Bike : Vehicle 
+    public class Bike : Vehicle 
     {
         // Properties
         public string Brand { get; set; }

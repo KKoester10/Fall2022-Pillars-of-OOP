@@ -8,7 +8,7 @@ namespace Fall2022_Pillars_of_OOP
 {
     // adding in the abstract modifior to make this an abstract class
     // Abstraction - Making a generic class that can be inherited by children classes by lending functionality 
-    internal abstract class Vehicle
+    public abstract class Vehicle
     {
         //properties
         // when we use abstract on a property , we are declairing the getters and setters abstract, Not the property itself

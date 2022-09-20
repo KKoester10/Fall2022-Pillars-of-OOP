@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Fall2022_Pillars_of_OOP
 {
-    internal class Car : Vehicle
+    public class Car : Vehicle
     {
         // Properties
         public string Make { get; set; }
         public string Model { get; set; }
+        public bool IsRunning { get; set; }
+
 
         // Constructor
         public Car()
@@ -20,6 +22,7 @@ namespace Fall2022_Pillars_of_OOP
             Speed = 0;
             TopSpeed = 150;
             Cost = -1500;
+            IsRunning = false;
         }
 
         // Methods
@@ -47,6 +50,11 @@ namespace Fall2022_Pillars_of_OOP
         {
             Console.WriteLine("HONK!!!");
             Console.Beep();
+        }
+
+        public void Accelerate()
+        {
+            Speed += 5;
         }
     }
 }
